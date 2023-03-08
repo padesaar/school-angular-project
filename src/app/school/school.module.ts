@@ -3,6 +3,7 @@ import { CommonModule } from '@angular/common';
 import { DashboardComponent } from './dashboard/dashboard.component';
 import { CreateSchoolComponent } from './create-school/create-school.component';
 import { UpdateSchoolComponent } from './update-school/update-school.component';
+import {MatTableModule} from "@angular/material/table";
 
 
 
@@ -12,8 +13,9 @@ import { UpdateSchoolComponent } from './update-school/update-school.component';
     CreateSchoolComponent,
     UpdateSchoolComponent
   ],
-  imports: [
-    CommonModule
-  ]
+    imports: [
+        CommonModule,
+        MatTableModule
+    ]
 })
 export class SchoolModule { }

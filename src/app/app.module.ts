@@ -8,16 +8,29 @@ import { SchoolComponent } from './dashboard/school/school.component';
 import { CreateSchoolComponent } from './dashboard/create-school/create-school.component';
 // @ts-ignore
 import { UpdateSchoolComponent } from './dashboard/update-school/update-school.component';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import {RouterModule, Routes} from "@angular/router";
+import {DashboardComponent} from "./school/dashboard/dashboard.component";
+
+const appRoutes: Routes = [
+  {
+    path: 'school',
+    component: DashboardComponent
+  }
+
+]
+
 
 @NgModule({
   declarations: [
     AppComponent,
-    CreateSchoolComponent,
-    UpdateSchoolComponent,
+
 
   ],
   imports: [
-    BrowserModule
+    BrowserModule,
+    BrowserAnimationsModule,
+    RouterModule.forRoot(appRoutes)
   ],
   providers: [],
   bootstrap: [AppComponent]

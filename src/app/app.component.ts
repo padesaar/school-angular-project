@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import {School} from "../models/School";
+import {School} from "./shared/models/School";
 
 @Component({
   selector: 'app-root',
