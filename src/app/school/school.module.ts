@@ -1,21 +1,17 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { DashboardComponent } from './dashboard/dashboard.component';
-import { CreateSchoolComponent } from './create-school/create-school.component';
-import { UpdateSchoolComponent } from './update-school/update-school.component';
+import { SchoolDashboardComponent } from './school-dashboard/school-dashboard.component';
 import {MatTableModule} from "@angular/material/table";
 
 
 
 @NgModule({
   declarations: [
-    DashboardComponent,
-    CreateSchoolComponent,
-    UpdateSchoolComponent
+    SchoolDashboardComponent
   ],
-    imports: [
-        CommonModule,
-        MatTableModule
-    ]
+  imports: [
+    CommonModule,
+    MatTableModule
+  ]
 })
 export class SchoolModule { }
